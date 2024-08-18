@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="bg-secondary pt-5 pb-10 lg:pb-0">
+      <nav
+        class="container px-5 md:mx-auto flex flex-wrap items-center justify-between gap-5"
+      >
+        <img src="./assets/logo.svg" alt="portfolio logo" />
+
+        <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+          <svg
+            class="fill-current text-gray-900"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+          >
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <ul
+          id="menu"
+          class="hidden lg:flex w-full lg:w-auto flex-wrap items-center gap-10"
+        >
+          <li class="py-1 lg:py-0">Home</li>
+          <li class="py-1 lg:py-0">About</li>
+          <li class="py-1 lg:py-0">Blog</li>
+          <li class="py-1 lg:py-0">Projects</li>
+          <li class="py-1 lg:py-0">Videos</li>
+          <li
+            class="h-10 w-10 mt-3 md:mt-0 rounded-full bg-primary text-white text-lg flex items-center justify-center"
+          >
+            <ion-icon name="mail"></ion-icon>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container px-5 md:mx-auto flex items-center gap-10 mt-10">
+        <div class="w-full lg:w-1/2">
+          <h3 class="font-normal mb-3 text-2xl">Hey there,</h3>
+          <h1 class="font-bold text-5xl lg:text-8xl my-3">I'm Ghazi</h1>
+          <p class="mt-5 mb-10 md:text-lg">
+            I'm developer focused on crafting user‑friendly experiences, I am
+            passionate about building excellent software.
+          </p>
+
+          <a
+            href="https://www.ghazikhan.in/Ghazi%20Khan%20Resume.pdf"
+            target="_blank"
+            class="bg-primary shadow-md text-white px-5 py-2 rounded my-10"
+          >
+            Download CV
+          </a>
+        </div>
+
+        <div class="hidden lg:block lg:w-1/2">
+          <img src="./assets/character.svg" alt="ghazi's avatar" />
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary py-5 text-white">
+      <div
+        class="container px-5 md:mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10"
+      >
+        <div class="flex items-center gap-5">
+          <h1 class="text-6xl lg:text-9xl font-bold">10</h1>
+          <h2 class="text-2xl lg:text-3xl">
+            Years of <br />
+            Experience
+          </h2>
+        </div>
+        <div
+          class="col-span-2 border-t pt-8 mt-5 md:border-t-0 md:pt-0 md:mt-0 md:justify-self-end"
+        >
+          <h3 class="text-2xl lg:text-3xl mb-5">Tech stacks I work with</h3>
+          <div class="flex gap-5 flex-wrap text-4xl md:text-3xl lg:text-6xl">
+            <ion-icon name="logo-react"></ion-icon>
+            <ion-icon name="logo-javascript"></ion-icon>
+            <ion-icon name="logo-nodejs"></ion-icon>
+            <ion-icon name="logo-angular"></ion-icon>
+            <ion-icon name="logo-html5"></ion-icon>
+            <ion-icon name="logo-css3"></ion-icon>
+            <ion-icon name="logo-sass"></ion-icon>
+            <ion-icon name="logo-wordpress"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container md:mx-auto px-5 py-10">
+      <div class="flex items-end flex-wrap gap-10 justify-between">
+        <div>
+          <h1 class="text-3xl font-semibold">Latest Blogs</h1>
+          <p class="text-gray-500 font-light">
+            I write blogs on various topics related to software development
+          </p>
+        </div>
+        <a href="#" class="underline text-primary font-normal"
+          >Explore More Blogs</a
+        >
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+        <!-- Blog 1-->
+        <div>
+          <img
+            src="./assets/blog-1.png"
+            alt="web dev should learn digital marketing"
+            class="w-full object-cover shadow-lg"
+          />
+          <h1 class="text-xl font-semibold mt-5">
+            Why Web Developers Should Learn Digital Marketing
+          </h1>
+          <p class="text-gray-400 font-light mt-2">Ghazi Khan | June 7, 2021</p>
+          <p class="font-light mt-4">
+            Web Development is a competitive industry, with many talented
+            individuals vying for the top spot. If you are looking to rise above
+            your competitors.
+          </p>
+        </div>
+
+        <!-- Blog 2-->
+        <div>
+          <img
+            src="./assets/blog-2.png"
+            alt="web dev should learn digital marketing"
+            class="w-full object-cover shadow-lg"
+          />
+          <h1 class="text-xl font-semibold mt-5">
+            Should you be a Full Stack Web Developer in 2021?
+          </h1>
+          <p class="text-gray-400 font-light mt-2">
+            Ghazi Khan | January 8, 2021
+          </p>
+          <p class="font-light mt-4">
+            Hello everyone, I’m Ghazi Khan, working at HCL Technologies as
+            Technical Lead. I have been a Full Stack Web Developer in my career.
+          </p>
+        </div>
+
+        <!-- Blog 3-->
+        <div>
+          <img
+            src="./assets/blog-3.png"
+            alt="web dev should learn digital marketing"
+            class="w-full object-cover shadow-lg"
+          />
+          <h1 class="text-xl font-semibold mt-5">
+            Best Scalable React App Structure 2021
+          </h1>
+          <p class="text-gray-400 font-light mt-2">Ghazi Khan | June 7, 2021</p>
+          <p class="font-light mt-4">
+            Best Scalable React App Structure 2021 Today I will show you how I
+            built a Best Scalable Structure for ReactJS Application. First, have
+            a look at…
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark-green py-10 text-white">
+      <div class="container md:mx-auto px-5">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold">
+          Get notified on latest blogs & videos
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 mt-4 gap-2">
+          <input
+            type="text"
+            placeholder="Enter email address"
+            required
+            class="bg-transparent text-md border border-primary w-full col-span-2 px-5 py-2"
+          />
+          <button class="bg-primary px-5 py-2 shadow-md rounded">
+            Subscribe to newsletter
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container md:mx-auto px-5 py-16">
+      <h1 class="text-center text-3xl font-semibold mb-5 text-3xl">
+        Connect with me on Social Media
+      </h1>
+      <div
+        class="flex flex-wrap items-center justify-center gap-5 text-primary text-4xl lg:text-5xl"
+      >
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-icon name="logo-youtube"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </div>
+    </section>
+
+    <footer class="bg-primary text-white py-3 text-center px-auto">
+      <p>Copyright 2024 | Code With Ghazi</p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
